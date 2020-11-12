@@ -1,0 +1,30 @@
+{
+  "name": "up-and-comer",
+  "version": "1.0.0",
+  "description": "API for up and coming made-up artists. ",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon node.app.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takumhonde9/up-and-comer.git"
+  },
+  "author": "Takudzwa Mhonde",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/takumhonde9/up-and-comer/issues"
+  },
+  "homepage": "https://github.com/takumhonde9/up-and-comer#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "sequelize": "^4.0.0-2"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.6"
+  }
+}

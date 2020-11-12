@@ -1,0 +1,37 @@
+{
+  "musicians": [
+    {
+      "id": 1,
+      "first_name": "Jason",
+      "last_name": "Jakes",
+      "artist_name" : "DJ Jakey",
+      "age": 21,
+      "country" : "Sweden",
+      "artist_class": [
+        "artist", 
+        "producer"
+      ],
+      "artist_start_date": "2018-09-01"
+    },
+    {
+      "id": 2,
+      "first_name": "Melissa",
+      "last_name": "Katherine",
+      "artist_name" : "Melissa",
+      "age": 25,
+      "country" : "England",
+      "artist_class": ["song-writer"],
+      "artist_start_date": "2010-08-11"
+    },
+    {
+      "id": 3,
+      "first_name": "Brendon",
+      "last_name": "Tristan",
+      "artist_name" : "TriB",
+      "age": 23,
+      "country" : "USA",
+      "artist_class": ["rapper"],
+      "artist_start_date": "2017-01-23"
+    }
+  ]
+}

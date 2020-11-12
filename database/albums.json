@@ -1,0 +1,40 @@
+{
+  "albums": [
+    {
+      "id": 1,
+      "artist_id": 1,
+      "title": "Everybody loves - Single",
+      "release_date": "2019-07-11",
+      "genre": "Electronic",
+      "producer": "DJ Jakey",
+      "record_label": "star scene"
+    },
+    {
+      "id": 2,
+      "artist_id": 1,
+      "title": "Stars aligned",
+      "release_date": "2020-02-23",
+      "genre": "Electronic",
+      "producer": "DJ Flakey",
+      "record_label": "star scene"
+    },
+    {
+      "id": 3,
+      "artist_id": 2,
+      "title": "Love lives here",
+      "release_date": "2020-05-02",
+      "genre": "Indie folk",
+      "producer": "Alex Wilson",
+      "record_label": "elegant illusions music"
+    },
+    {
+      "id": 4,
+      "artist_id": 3,
+      "title": "NY times",
+      "release_date": "2020-08-02",
+      "genre": "Rap/Hip-hop",
+      "producer": "Raj Flex",
+      "record_label": ""
+    }
+  ]
+}
