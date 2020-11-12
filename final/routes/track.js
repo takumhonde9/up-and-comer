@@ -2,6 +2,13 @@ const express = require("express");
 
 const router = express.Router();
 
+// import controllers
+const {
+  getAllTracks,
+  getTrackById,
+  getDeleteTrackById,
+} = require("../controllers/track");
+
 // add route to get all tracks
 // add corresponding controller
 // controller: getAllTracks
