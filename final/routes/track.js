@@ -12,16 +12,16 @@ const {
 // add route to get all tracks
 // add corresponding controller
 // controller: getAllTracks
-router.get("/tracks", getAllTracks);
+router.get("/", getAllTracks);
 
 // add route to get a track by id
 // add corresponding controller
 // controller: getTrackById
-router.get("/tracks/:id", getTrackById);
+router.get("/:id", getTrackById);
 
 // add route to delete a track by id
 // add corresponding controller
 // controller: getDeleteTrackById
-router.delete("/tracks/:id", getDeleteTrackById);
+router.delete("/:id", getDeleteTrackById);
 
 module.exports = router;

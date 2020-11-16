@@ -10,14 +10,14 @@ const {
 
 // add route to get all artists
 // add corresponding controller
-router.get("/artists", getAllArtists);
+router.get("/", getAllArtists);
 
 // add route to get a artist by id
 // add corresponding controller
-router.get("/artists/:id", getArtistById);
+router.get("/:id", getArtistById);
 
 // add route to add a new by artist
 // add corresponding controller
-router.post("/artists/", getAddArtist);
+router.post("/", getAddArtist);
 
 module.exports = router;
