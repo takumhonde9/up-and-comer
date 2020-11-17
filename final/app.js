@@ -1,4 +1,6 @@
 const express = require("express");
+const bodyParser = require("body-parser");
+
 const { port } = require("./config");
 const { album, artist, track } = require("./routes");
 const {
@@ -9,6 +11,10 @@ const {
 
 // create instance of app
 const app = express();
+
+// middleware
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // set up routes
 app.use(ENDPOINT_TRACK, track);
