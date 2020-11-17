@@ -1,0 +1,44 @@
+{
+  "tracks": [
+    {
+      "id": 1,
+      "artist_id": 1,
+      "album_id": 1,
+      "number_of_plays": 100,
+      "play_time": "2:48",
+      "title": "Everybody loves"
+    },
+    {
+      "id": 2,
+      "artist_id": 1,
+      "album_id": 2,
+      "number_of_plays": 315,
+      "play_time": "4.56",
+      "title": "Time never stops"
+    },
+    {
+      "id": 3,
+      "artist_id": 2,
+      "album_id": 3,
+      "number_of_plays": 600,
+      "play_time": "3:47",
+      "title": "The day you left"
+    },
+    {
+      "id": 4,
+      "artist_id": 3,
+      "album_id": 4,
+      "number_of_plays": 459,
+      "play_time": "4:31",
+      "title": "NY kids"
+    },
+    {
+      "id": 5,
+      "artist_id": 3,
+      "album_id": 4,
+      "number_of_plays": 506,
+      "play_time": "3:32",
+      "title": "R.E.A.S.O.N"
+    }
+  ]
+}
