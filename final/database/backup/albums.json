@@ -36,5 +36,13 @@
       "producer": "Raj Flex",
       "record_label": ""
     }
-  ]
+  ],
+
+  "types": {
+    "title": "string",
+    "release_date": "string",
+    "genre": "string",
+    "producer": "string",
+    "record_label": "string"
+  }
 }

@@ -40,5 +40,10 @@
       "play_time": "3:32",
       "title": "R.E.A.S.O.N"
     }
-  ]
+  ],
+  "types": {
+    "number_of_plays": "number",
+    "play_time": "string",
+    "title": "string"
+  }
 }

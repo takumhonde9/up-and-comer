@@ -9,6 +9,44 @@ class Model {
     this.data = parseReadJSON(modelName);
   }
   /**
+   *Description. This method creates a new record with the given options
+   * @param {any} options
+   * @returns {any} returns an object of the created record.
+   */
+  create(options) {
+    // remove id from options
+    const verifiedOptions = Object.filter(options, ([key, value]) =>
+      this.invalidFields(key)
+    );
+
+    // verify option types
+    const validationReport = this.validateTypes(verifiedOptions);
+
+    if (validationReport.invalid) {
+      console.error(
+        `Failed to create new record. ${JSON.stringify(
+          validationReport.invalidTypes
+        )}`
+      );
+      throw Error("Failed to create record.");
+    }
+
+    const id = this.data[this.modelName].length + 1;
+
+    const newRow = { id, ...verifiedOptions };
+
+    const oldData = this.data[this.modelName];
+
+    const newData = [...oldData, newRow];
+
+    stringifyWriteJSON(this.modelName, {
+      [this.modelName]: newData,
+      types: this.data["types"],
+    });
+
+    return newRow;
+  }
+  /**
    * Description. This method queries database and fetches all rows for model
    * @returns {[]} returns an array of rows for the table associated with model
    */
@@ -111,6 +149,20 @@ class Model {
       key !== "album_id" &&
       key !== "track_id"
     );
+  }
+
+  validateTypes(options) {
+    const optionsKeys = Object.keys(options);
+    const report = { invalid: false, invalidTypes: {} };
+    optionsKeys.forEach((optionKey) => {
+      if (typeof options[optionKey] !== this.data["types"][optionKey]) {
+        report.invalid = true;
+        report.invalidTypes[optionKey] = `expected type ${typeof this.data[
+          "types"
+        ][optionKey]}`;
+      }
+    });
+    return report;
   }
 }
 
