@@ -36,18 +36,6 @@
         "rapper"
       ],
       "artist_start_date": "2017-01-23"
-    },
-    {
-      "id": 4,
-      "first_name": "Rogan",
-      "last_name": "Faxe",
-      "artist_name": "Rogan Faxe",
-      "age": 29,
-      "country": "Germany",
-      "artist_class": [
-        "artist"
-      ],
-      "artist_start_date": "2018-09-01"
     }
   ],
   "types": {
