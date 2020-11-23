@@ -1,0 +1,34 @@
+#!/bin/bash
+
+FILE=""
+# this function checks whether a file exists and deletes it if it does
+function deleteFile() {
+  if test -f "$FILE"; then
+    rm "$FILE"
+  fi 
+}
+
+# MAIN PROGRAM
+
+echo Resetting db... 
+
+# copy contents of backup into database
+
+# go into db directory
+cd database/
+
+# remove old files in db directory
+FILE="albums.json"
+deleteFile
+FILE="artists.json"
+deleteFile
+FILE="tracks.json" 
+deleteFile
+
+
+# # copy contents of files in backup into directory
+cp backup/albums.json albums.json
+cp backup/artists.json artists.json
+cp backup/tracks.json tracks.json
+
+echo Done resetting db...
